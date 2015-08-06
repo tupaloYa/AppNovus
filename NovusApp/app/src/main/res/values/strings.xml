@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">NovusApp</string>
+
+    <string name="action_search">Search</string>
+
+    <string-array name="screen_array">
+        <item>Акции, Новинки, Импорт</item>
+        <item>Магазины NOVUS</item>
+        <item>Програма лояльности</item>
+        <item>Личный кабинет</item>
+        <item>Интернет-магазин</item>
+        <item>Услуги NOVUS</item>
+        <item>Собственное производство</item>
+        <item>Подписка</item>
+        <item>FAQ</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="page">Page:</string>
+    <string name="screen_two">Магазины NOVUS</string>
+    <string name="screen_three">Програма лояльности</string>
+    <string name="screen_four">Личный кабинет</string>
+    <string name="screen_five">Интернет-магазин</string>
+    <string name="screen_six">Услуги NOVUS</string>
+    <string name="screen_seven">Собственное производство</string>
+    <string name="screen_eight">Подписка</string>
+    <string name="screen_nine">FAQ</string>
+
+</resources>
