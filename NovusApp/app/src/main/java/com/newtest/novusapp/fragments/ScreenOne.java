@@ -54,7 +54,7 @@ public class ScreenOne extends Fragment {
          */
         @Override
         public int getCount() {
-            return 10;
+            return 3;
         }
 
         /**

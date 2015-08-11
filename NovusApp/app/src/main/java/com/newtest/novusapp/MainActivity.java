@@ -1,5 +1,7 @@
 package com.newtest.novusapp;
 
+import com.newtest.novusapp.MapsActivity;
+
 import com.newtest.novusapp.fragments.ScreenOne;
 import com.newtest.novusapp.fragments.ScreenTwo;
 import com.newtest.novusapp.fragments.ScreenThree;
@@ -10,6 +12,7 @@ import com.newtest.novusapp.fragments.ScreenSeven;
 import com.newtest.novusapp.fragments.ScreenEight;
 import com.newtest.novusapp.fragments.ScreenNine;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -41,6 +44,9 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Intent intent = new Intent(this,MapsActivity.class);
+        //startActivity(intent);
 
         mTitle = mDrawerTitle = getTitle();
         mScreenTitles = getResources().getStringArray(R.array.screen_array);
@@ -91,7 +97,7 @@ public class MainActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu;
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_main,menu);
+        inflater.inflate(R.menu.menu_main, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -205,6 +211,12 @@ public class MainActivity extends ActionBarActivity {
         super.onConfigurationChanged(newConfig);
         // Pass any configuration change to the drawer toggles
         mDrawerToggle.onConfigurationChanged(newConfig);
+    }
+
+    public void buttonOnClickMap(View view)
+    {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
     }
 
 }
